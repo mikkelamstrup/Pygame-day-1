@@ -69,7 +69,6 @@ while running:
         pygame.time.delay(5000)
         running = False
         
-
     if win:
         winText = font.render(f"YOU WIN IN {elapseTime} SECONDS!", True, BLACK)
         screen.blit(winText, (WIDTH // 2 - 200, HEIGHT // 2 - 25))
