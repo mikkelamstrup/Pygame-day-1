@@ -16,9 +16,9 @@ running = True
 while running:
     pygame.time.delay(30)
 
-for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-        running = False
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
 
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT]: x -= speed
@@ -26,9 +26,9 @@ for event in pygame.event.get():
     if keys[pygame.K_UP]: y -= speed
     if keys[pygame.K_DOWN]: y += speed
 
-screen.fill(WHITE)
-pygame.draw.rect(screen, BLUE, (x, y, 50, 50))
-pygame.display.update()
+    screen.fill(WHITE)
+    pygame.draw.rect(screen, BLUE, (x, y, 50, 50))
+    pygame.display.update()
 
 pygame.quit()
 
