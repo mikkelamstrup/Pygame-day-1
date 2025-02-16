@@ -2,7 +2,7 @@ import pygame
 
 pygame.init()
 
-WIDTH, HEIGHT = 500, 500
+WIDTH, HEIGHT = 1500, 700
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("My first game")
 
@@ -25,9 +25,9 @@ while running:
     if keys[pygame.K_RIGHT]: x += speed
     if keys[pygame.K_UP]: y -= speed
     if keys[pygame.K_DOWN]: y += speed
-
+    
     screen.fill(WHITE)
-    pygame.draw.rect(screen, BLUE, (x, y, 50, 50))
+    pygame.draw.rect(screen, BLUE, (x, y, 50, 20))
     pygame.display.update()
 
 pygame.quit()
